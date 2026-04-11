@@ -173,7 +173,7 @@ This command forwards to `app.py`, keeps the model loaded in memory, and serves 
 To learn more about setup, advanced usage, and evaluation metrics, please visit the [MOSS-Audio-Tokenizer Repository](https://github.com/OpenMOSS/MOSS-Audio-Tokenizer)
 
 <p align="center">
-  <img src="./assets/arch_moss_audio_tokenizer_nano.png" alt="MOSS Audio Tokenizer Nano architecture" width="100%" />
+  <img src="./assets/images/arch_moss_audio_tokenizer_nano.png" alt="MOSS Audio Tokenizer Nano architecture" width="100%" />
   Architecture of MOSS Audio Tokenizer
 </p>
 
