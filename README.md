@@ -225,18 +225,69 @@ If you use the MOSS-TTS work in your research or product, please cite:
 }
 ```
 
-```bibtex
-@misc{gong2026mossaudiotokenizerscalingaudiotokenizers,
-  title={MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio Foundation Models}, 
-  author={Yitian Gong and Kuangwei Chen and Zhaoye Fei and Xiaogui Yang and Ke Chen and Yang Wang and Kexin Huang and Mingshu Chen and Ruixiao Li and Qingyuan Cheng and Shimin Li and Xipeng Qiu},
-  year={2026},
-  eprint={2602.10934},
-  archivePrefix={arXiv},
-  primaryClass={cs.SD},
-  url={https://arxiv.org/abs/2602.10934}, 
-}
 ```
+Model mới TTS siêu nhỏ 0.1B chạy realtime trên CPU, model TTS càng ngày càng nhỏ, càng tốt, càng chất lượng (hơi tiếc hỗ trợ 20 thứ tiếng nhưng ko có tiếng Việt)
 
-## Star History
+MOSS-TTS-Nano là model Text-to-Speech mới từ OpenMOSS, theo đúng triết lý:
+👉 “Càng nhỏ càng tốt – nhưng vẫn đủ mạnh để dùng thật”
 
-[![Star History Chart](https://api.star-history.com/svg?repos=OpenMOSS/MOSS-TTS-Nano&type=Date)](https://star-history.com/#OpenMOSS/MOSS-TTS-Nano&Date)
+Chỉ ~0.1B tham số nhưng vẫn:
+ • Voice cloning
+ • 48kHz stereo
+ • Streaming realtime trên CPU
+
+🚀 Điểm nổi bật
+
+⚡ Siêu nhẹ – chạy CPU mượt
+ • ~100M params
+ • Không cần GPU
+ • Realtime chỉ với vài core CPU  ￼
+
+👉 Phù hợp edge device, app local, sản phẩm thực tế
+
+🎙️ Voice cloning zero-shot
+ • Chỉ cần vài giây audio mẫu
+ • Clone giọng ngay lập tức
+ • Hỗ trợ đa ngôn ngữ
+
+👉 Không cần fine-tune phức tạp  ￼
+
+🔊 Chất lượng cao bất ngờ
+ • 48kHz stereo native
+ • Audio rõ, tự nhiên
+ • Streaming latency thấp
+
+👉 Tiệm cận model lớn nhưng nhẹ hơn rất nhiều  ￼
+
+🧠 Kiến trúc tối ưu deployment
+ • Audio tokenizer ~20M params
+ • RVQ + Transformer (không CNN)
+ • Token audio nén hiệu quả
+
+👉 Thiết kế “deployment-first” ngay từ đầu  ￼
+
+🎯 Use case
+ • Chatbot có giọng nói realtime
+ • App mobile / web TTS
+ • Voice agent / AI assistant
+ • Thiết bị IoT, robot
+ • Podcast / dubbing nhanh
+
+🧠 Insight
+
+MOSS-TTS-Nano cho thấy một xu hướng rất rõ:
+
+👉 TTS không còn cần model hàng tỷ tham số
+👉 Model nhỏ + tối ưu tốt = đủ dùng production
+
+🧠 Kết luận
+
+Nếu bạn đang tìm:
+ • TTS nhẹ
+ • Chạy local
+ • Không cần GPU
+ • Có voice cloning
+
+👉 Đây là một trong những lựa chọn đáng thử nhất hiện tại.
+
+'''
